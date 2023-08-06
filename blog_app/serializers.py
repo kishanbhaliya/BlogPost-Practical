@@ -7,6 +7,12 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = '__all__'
 
+class PostSerializer(serializers.ModelSerializer):
+    num_likes = serializers.IntegerField(read_only=True)
+
+    class Meta:
+        model = Post
+        fields = ['id', 'title', 'description', 'content', 'creation_date', 'is_public', 'owner', 'num_likes']
     # def create(self, validated_data):
     #     print(self.context['request'].user.id)
     #     instance = super(PostSerializer, self).create(validated_data)

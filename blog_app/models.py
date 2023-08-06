@@ -3,6 +3,7 @@ from auth_app.models import User
 from common.models import ModelMixin, TimeStampMixin
 from django.utils.translation import gettext_lazy as _
 import uuid
+from django.utils import timezone
 
 # Create your models here.
 class Post(ModelMixin):
@@ -10,6 +11,8 @@ class Post(ModelMixin):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=255)
     content = models.TextField()
+    creation_date = models.DateTimeField(default=timezone.now)
+    is_public = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = _('Blog - Posts')
