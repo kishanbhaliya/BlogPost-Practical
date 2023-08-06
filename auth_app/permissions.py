@@ -4,6 +4,8 @@ from rest_framework.exceptions import AuthenticationFailed
 from auth_app.models import User
 from django.conf import settings
 import jwt
+from rest_framework import permissions
+
 
 def decode_token(token):
     try:
@@ -47,3 +49,4 @@ class AllowAnyReadOnly(AllowAny):
         if request.method in ['GET']:
             return True
         return False
+
