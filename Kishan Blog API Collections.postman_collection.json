@@ -1,0 +1,1240 @@
+{
+	"info": {
+		"_postman_id": "bd35fc0e-b3d2-4df1-9a6c-cbad0671f70d",
+		"name": "Kishan Blog API Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27175376"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "User Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"kishan\",\n    \"first_name\" : \"kishan\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan@gmail.com\",\n    \"password\": \"Kishan@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"kishan\",\n    \"first_name\" : \"kishan\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan@gmail.com\",\n    \"password\": \"Kishan@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 11:20:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n    \"username\": \"kishan\",\n    \"first_name\": \"kishan\",\n    \"last_name\": \"bhaliya\",\n    \"email\": \"kishan@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"kishan@gmail.com\",\n    \"password\": \"Kishan@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\" : \"kishan@gmail.com\",\n    \"password\": \"Kishan@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 10:53:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "OPTIONS, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "582"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5MTQwNTYzNywiaWF0IjoxNjkxMzE5MjM3LCJqdGkiOiJmYmNhNzA0MzM5Y2I0ZWM0YmM4M2Y0OTRjZGNlMDI5ZCIsInVzZXJfaWQiOiJjMTgyODY4ZS1lY2YxLTQyOGQtYTQ2MS1lNGVlNTE3ZDQ4MTYifQ.zUE3rdLDMzBezF0KfCHcaKE0DB3YMu52geggF6vi3RQ\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkxMzE5NTM3LCJpYXQiOjE2OTEzMTkyMzcsImp0aSI6IjQzMTBlNTAyMTg4ZjRiZTZiZmU3ZDExMTg5YWZhOTg5IiwidXNlcl9pZCI6ImMxODI4NjhlLWVjZjEtNDI4ZC1hNDYxLWU0ZWU1MTdkNDgxNiJ9.cFkE8X_r0mvjFTY6GXB3wMatdfbNG_mTLmbvW99DeqY\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Users Lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/users/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"users",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Users Lists Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 11:13:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "399"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"edd1d963-5aa3-4c1c-825b-34aa2e7b2613\",\n        \"username\": \"admin\",\n        \"first_name\": \"\",\n        \"last_name\": \"\",\n        \"email\": \"admin@gmail.com\"\n    },\n    {\n        \"id\": \"de02a8b8-77b2-45ca-968b-18527af04abe\",\n        \"username\": \"kishan\",\n        \"first_name\": \"kishan\",\n        \"last_name\": \"bhaliya\",\n        \"email\": \"kishan@gmail.com\"\n    },\n    {\n        \"id\": \"c182868e-ecf1-428d-a461-e4ee517d4816\",\n        \"username\": \"kishan2\",\n        \"first_name\": \"kishan\",\n        \"last_name\": \"bhaliya\",\n        \"email\": \"kishan2@gmail.com\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "User - pk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/users/de02a8b8-77b2-45ca-968b-18527af04abe/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"users",
+								"de02a8b8-77b2-45ca-968b-18527af04abe",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Pk Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/de02a8b8-77b2-45ca-968b-18527af04abe/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										"de02a8b8-77b2-45ca-968b-18527af04abe",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 11:14:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"de02a8b8-77b2-45ca-968b-18527af04abe\",\n    \"username\": \"kishan\",\n    \"first_name\": \"kishan\",\n    \"last_name\": \"bhaliya\",\n    \"email\": \"kishan@gmail.com\"\n}"
+						}
+					]
+				},
+				{
+					"name": "User Delete - pk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"kishan1\",\n    \"first_name\" : \"kishan2\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan3@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/users/de02a8b8-77b2-45ca-968b-18527af04abe/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"users",
+								"de02a8b8-77b2-45ca-968b-18527af04abe",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"kishan1\",\n    \"first_name\" : \"kishan2\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan3@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/de02a8b8-77b2-45ca-968b-18527af04abe/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										"de02a8b8-77b2-45ca-968b-18527af04abe",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 11:18:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "\"User deleted successfully.\""
+						}
+					]
+				},
+				{
+					"name": "User Update - pk",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"kishan1\",\n    \"first_name\" : \"kishan2\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan3@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/auth/users/c182868e-ecf1-428d-a461-e4ee517d4816/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"users",
+								"c182868e-ecf1-428d-a461-e4ee517d4816",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"kishan\",\n    \"first_name\" : \"kishan\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 05 Aug 2023 07:36:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"57d9314c-298b-4c25-869a-d50c012f2f9d\",\n    \"username\": \"kishan\",\n    \"first_name\": \"kishan\",\n    \"last_name\": \"bhaliya\",\n    \"email\": \"kishan@gmail.com\",\n    \"date_joined\": \"2023-08-05T07:36:44.608435Z\",\n    \"created_at\": \"2023-08-05T07:36:44.609183Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Post List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/posts/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"posts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Users Lists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/blog/posts/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"blog",
+										"posts",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 12:21:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "791"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"a3e226af-d2ae-4311-b844-dd3b97217051\",\n        \"created_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n        \"updated_by\": null,\n        \"created_at\": \"2023-08-06T12:20:37.553001Z\",\n        \"updated_at\": \"2023-08-06T12:20:37.553048Z\",\n        \"title\": \"kishan\",\n        \"description\": \"kishan\",\n        \"content\": \"bhaliya\"\n    },\n    {\n        \"id\": \"41eb12ed-b7a1-4e6f-8bae-41ba1e3b0606\",\n        \"created_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n        \"updated_by\": null,\n        \"created_at\": \"2023-08-06T12:20:43.550411Z\",\n        \"updated_at\": \"2023-08-06T12:20:43.550450Z\",\n        \"title\": \"kishan2\",\n        \"description\": \"kishan2\",\n        \"content\": \"bhaliya\"\n    },\n    {\n        \"id\": \"4f2e94db-c46f-421d-b8e8-14f120bae682\",\n        \"created_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n        \"updated_by\": null,\n        \"created_at\": \"2023-08-06T12:20:51.069146Z\",\n        \"updated_at\": \"2023-08-06T12:20:51.069187Z\",\n        \"title\": \"kishan3\",\n        \"description\": \"kishan3\",\n        \"content\": \"bhaliya\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Post Get - pk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/posts/a3e226af-d2ae-4311-b844-dd3b97217051/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"posts",
+								"a3e226af-d2ae-4311-b844-dd3b97217051",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post Get - pk",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/blog/posts/a3e226af-d2ae-4311-b844-dd3b97217051/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"blog",
+										"posts",
+										"a3e226af-d2ae-4311-b844-dd3b97217051",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 12:28:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "316"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"a3e226af-d2ae-4311-b844-dd3b97217051\",\n    \"created_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n    \"updated_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n    \"created_at\": \"2023-08-06T12:20:37.553001Z\",\n    \"updated_at\": \"2023-08-06T12:27:51.518016Z\",\n    \"title\": \"kishan Update\",\n    \"description\": \"kishan Update\",\n    \"content\": \"bhaliya Update\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post DELETE - pk",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkxMzI2ODAwLCJpYXQiOjE2OTEzMjMyMDAsImp0aSI6ImI3OTM0NDJkZmY0MjQ2Mjc5ODJmYzNmZDI4MTI1MDlkIiwidXNlcl9pZCI6IjRiYjQzNTcxLTY3ZDQtNDY1Ny1iMmU3LTEwMmFhY2E2MDMxYSJ9.pRa04bIVdfwYvhZmxyfFKorS4JKo8G8zxRwQS0OfA4E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"kishan1\",\n    \"first_name\" : \"kishan2\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan3@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/posts/5fcff05d-8a10-4db5-b906-ac86db9364a8/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"posts",
+								"5fcff05d-8a10-4db5-b906-ac86db9364a8",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"kishan1\",\n    \"first_name\" : \"kishan2\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan3@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/de02a8b8-77b2-45ca-968b-18527af04abe/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										"de02a8b8-77b2-45ca-968b-18527af04abe",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 11:18:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "\"User deleted successfully.\""
+						}
+					]
+				},
+				{
+					"name": "Post Update - pk",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkxMzI2ODAwLCJpYXQiOjE2OTEzMjMyMDAsImp0aSI6ImI3OTM0NDJkZmY0MjQ2Mjc5ODJmYzNmZDI4MTI1MDlkIiwidXNlcl9pZCI6IjRiYjQzNTcxLTY3ZDQtNDY1Ny1iMmU3LTEwMmFhY2E2MDMxYSJ9.pRa04bIVdfwYvhZmxyfFKorS4JKo8G8zxRwQS0OfA4E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"kishan Update\",\n    \"description\" : \"kishan Update\",\n    \"content\" : \"bhaliya Update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/posts/a3e226af-d2ae-4311-b844-dd3b97217051/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"posts",
+								"a3e226af-d2ae-4311-b844-dd3b97217051",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post Update - pk",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\" : \"kishan Update\",\n    \"description\" : \"kishan Update\",\n    \"content\" : \"bhaliya Update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/blog/posts/a3e226af-d2ae-4311-b844-dd3b97217051/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"blog",
+										"posts",
+										"a3e226af-d2ae-4311-b844-dd3b97217051",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sun, 06 Aug 2023 12:27:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "316"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"a3e226af-d2ae-4311-b844-dd3b97217051\",\n    \"created_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n    \"updated_by\": \"4bb43571-67d4-4657-b2e7-102aaca6031a\",\n    \"created_at\": \"2023-08-06T12:20:37.553001Z\",\n    \"updated_at\": \"2023-08-06T12:27:51.518016Z\",\n    \"title\": \"kishan Update\",\n    \"description\": \"kishan Update\",\n    \"content\": \"bhaliya Update\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Post Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkxMzI2ODAwLCJpYXQiOjE2OTEzMjMyMDAsImp0aSI6ImI3OTM0NDJkZmY0MjQ2Mjc5ODJmYzNmZDI4MTI1MDlkIiwidXNlcl9pZCI6IjRiYjQzNTcxLTY3ZDQtNDY1Ny1iMmU3LTEwMmFhY2E2MDMxYSJ9.pRa04bIVdfwYvhZmxyfFKorS4JKo8G8zxRwQS0OfA4E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"kishan3\",\n    \"description\" : \"kishan3\",\n    \"content\" : \"bhaliya\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/blog/posts/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"blog",
+								"posts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"kishan\",\n    \"first_name\" : \"kishan\",\n    \"last_name\" : \"bhaliya\",\n    \"email\" : \"kishan@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/auth/users/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"auth",
+										"users",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 05 Aug 2023 07:36:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"57d9314c-298b-4c25-869a-d50c012f2f9d\",\n    \"username\": \"kishan\",\n    \"first_name\": \"kishan\",\n    \"last_name\": \"bhaliya\",\n    \"email\": \"kishan@gmail.com\",\n    \"date_joined\": \"2023-08-05T07:36:44.608435Z\",\n    \"created_at\": \"2023-08-05T07:36:44.609183Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
